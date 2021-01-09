@@ -1,1 +1,3 @@
-# Web development project
+# Tindog
+
+Tinder clone site design for Dogs
