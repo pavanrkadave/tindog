@@ -4,42 +4,57 @@ html {
 }
 
 body {
-  font-family: "Inconsolata", monospace;
-  line-height: 1.25;
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat";
   font-weight: 700;
-}
-
-h1 {
-  font-family: "Pacifico", cursive;
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
-h2 {
-  font-family: "Inconsolata-Bold", monospace;
-  font-weight: bold;
-}
-
-h3 {
-  font-family: "Inconsolata-Bold", monospace;
-  font-weight: 900;
 }
 
 p {
   color: #8f8f8f;
 }
 
-/***************** Custom Styles for Title Section ****************/
-#title {
-  background-color: #ff4c68;
-  color: #fff;
+/***** Headings *****/
+.big-heading {
+  font-weight: 700;
+  font-size: 3.5rem;
   line-height: 1.5;
-  letter-spacing: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.5;
 }
 
 /* Container */
 .container-fluid {
-  padding: 3% 15% 5%;
+  padding: 7% 15%;
+}
+
+/********************* Sections ***********************************/
+.colored-section {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/***************** Custom Styles for Title Section ****************/
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
 }
 
 /* Navigation Bar */
@@ -58,9 +73,9 @@ p {
   padding: 0 18px;
 }
 .nav-link {
-  font-size: 1.2rem;
-  font-weight: 500;
-  font-family: "Inconsolata", monospace;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  font-family: "Ubuntu";
 }
 
 /* Download Buttons */
@@ -70,20 +85,21 @@ p {
 
 /* Title Image */
 .title-image {
-  width: 50%;
+  width: 60%;
   transform: rotate(25deg);
   position: absolute;
 }
 
 /**************************** Feature Section *********************/
 #features {
-  padding: 7% 15%;
-  background-color: #fff;
   position: relative;
 }
 
+.feature-title {
+  font-size: 1.5rem;
+}
+
 .feature-box {
-  text-align: center;
   padding: 5%;
 }
 
@@ -99,14 +115,12 @@ p {
 
 /***************************** Testimonial Section *********************/
 #testimonials {
-  padding: 7% 15%;
-  text-align: center;
   background-color: #ef8172;
-  color: #fff;
 }
 
-.carousel-item {
-  padding: 7% 15%;
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .testimonial-img {
@@ -118,7 +132,6 @@ p {
 /******************************* Press Section **************************/
 #press {
   padding: 3%;
-  text-align: center;
   background-color: #ef8172;
 }
 
@@ -128,9 +141,10 @@ p {
 }
 
 /******************************* Pricing Section **************************/
-#pricing {
-  padding: 7% 15%;
-  text-align: center;
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .pricing-column {
@@ -138,24 +152,8 @@ p {
 }
 
 /******************************* CTA Section *****************************/
-#cta {
-  background-color: #ff4c68;
-  padding: 7% 15%;
-  text-align: center;
-  color: #fff;
-}
-
-.cta-text {
-  font-size: 2.5rem;
-  padding: 0 15%;
-}
 
 /******************************* Footer Section **************************/
-#footer {
-  padding: 7% 15%;
-  text-align: center;
-}
-
 .social-icons {
   margin: 20px 10px;
 }
@@ -170,5 +168,27 @@ p {
     position: static;
     transform: rotate(0);
     width: 40%;
+  }
+
+  .big-heading {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.5;
+  }
+
+  .section-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  .testimonial-text {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .price-text {
+    font-size: 2rem;
+    line-height: 1.5;
   }
 }
